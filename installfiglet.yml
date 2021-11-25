@@ -1,6 +1,7 @@
 ---
 - name: Install figlet
-  hosts: localhost
+  hosts: web
+  become: yes
   tasks:
           - name: Install packages
             yum:
