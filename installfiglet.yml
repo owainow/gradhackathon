@@ -6,7 +6,7 @@
           - name: Install packages
             yum:
              name:
-               - figlet
+               - python39
              state: present
              
           - name: Install commuinty ansible modules
