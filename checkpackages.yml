@@ -1,0 +1,19 @@
+---
+- name: Check package is installed
+  hosts: localhost
+  become: yes
+  tasks:
+
+  - name: "Check if figlet is installed"
+    package_facts:
+     manager: "auto"
+
+  - name: "figlet test result"
+    debug:
+      msg: "FIGLET found"
+    when: "'figlet' in ansible_facts.packages"
+
+  - name: "FIGLET test result"
+    fail:
+      msg: "FIGLET NOT found"
+    when: "'figlet' not in ansible_facts.packages"
