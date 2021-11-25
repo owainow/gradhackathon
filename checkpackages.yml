@@ -3,7 +3,7 @@
   hosts: web
   tasks:
 
-  - name: "Check if figlet is installed"
+  - name: "Check if Python is installed"
     package_facts:
      manager: "auto"
 
