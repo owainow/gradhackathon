@@ -1,6 +1,6 @@
 ---
 - name: Telegram notifaction
-  hosts: control
+  hosts: localhost
   tasks:
    - name: Send notify to Telegram
      telegram:
