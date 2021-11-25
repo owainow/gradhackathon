@@ -8,3 +8,9 @@
              name:
                - figlet
              state: present
+             
+          - name: Install commuinty ansible modules
+            shell: ansible-galaxy collection install community.general
+            args:
+              executable: /bin/bash
+
