@@ -12,7 +12,4 @@
   hosts: localhost
   tasks:
           - name: Install commuinty ansible modules
-            shell: ansible-galaxy collection install community.general
-            args:
-              executable: /bin/bash
-
+            command: ansible-galaxy collection install community.general
