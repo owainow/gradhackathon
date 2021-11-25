@@ -1,0 +1,10 @@
+---
+- name: Install figlet and toilet
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: Install packages
+            yum:
+             name:
+               - figlet
+             state: present
