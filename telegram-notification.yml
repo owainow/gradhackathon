@@ -1,7 +1,6 @@
 ---
 - name: Telegram notifaction
   hosts: localhost
-  become: yes
   tasks:
    - name: Send notify to Telegram
      community.general.telegram:
