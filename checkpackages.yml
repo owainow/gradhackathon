@@ -1,18 +1,18 @@
 ---
 - name: Check package is installed
-  hosts: localhost
+  hosts: web
   tasks:
 
   - name: "Check if figlet is installed"
     package_facts:
      manager: "auto"
 
-  - name: "figlet test result"
+  - name: "Python test result"
     debug:
-      msg: "FIGLET found"
-    when: "'figlet' in ansible_facts.packages"
+      msg: "PYTHON 39 found"
+    when: "'python39' in ansible_facts.packages"
 
-  - name: "FIGLET test result"
+  - name: "Python 39 test result"
     fail:
-      msg: "FIGLET NOT found"
-    when: "'figlet' not in ansible_facts.packages"
+      msg: "PYTHON 39 NOT found"
+    when: "'python39' not in ansible_facts.packages"
