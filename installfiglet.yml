@@ -1,5 +1,5 @@
 ---
-- name: Install figlet and toilet
+- name: Install figlet
   hosts: localhost
   become: yes
   tasks:
