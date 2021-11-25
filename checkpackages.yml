@@ -1,7 +1,6 @@
 ---
 - name: Check package is installed
   hosts: localhost
-  become: yes
   tasks:
 
   - name: "Check if figlet is installed"
