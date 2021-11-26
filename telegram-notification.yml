@@ -8,5 +8,5 @@
      telegram:
       token: '2119002571:AAE306nVA-Rq0QapKUwb5I2_LmEoxMY5wRY'
       chat_id: -545438160
-      msg: "Group {{ groupnumber  }} has completed the ansible tasks."
+      msg: "BREAKING NEWS WE ARE GETTING REPORTS THAT TEAM {{ groupnumber  }} HAVE COMPLETED THE ANSIBLE TASKS."
 
