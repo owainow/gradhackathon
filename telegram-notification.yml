@@ -1,10 +1,12 @@
 ---
 - name: Telegram notifaction
   hosts: localhost
+  vars:
+       - groupnumber: 0
   tasks:
    - name: Send notify to Telegram
      telegram:
       token: '2119002571:AAE306nVA-Rq0QapKUwb5I2_LmEoxMY5wRY'
       chat_id: -545438160
-      msg: "Group X has completed the ansible tasks."
-      
+      msg: "Group {{ groupnumber  }} has completed the ansible tasks."
+
