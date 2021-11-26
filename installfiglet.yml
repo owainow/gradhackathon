@@ -8,8 +8,4 @@
              name:
                - python39
              state: present
-- name: Install community ansible modules
-  hosts: localhost
-  tasks:
-          - name: Install commuinty ansible modules
-            command: ansible-galaxy collection install community.general
+
